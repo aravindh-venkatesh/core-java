@@ -10,7 +10,7 @@ public class Main implements TypesOfMethodsAndAttributes {
     }
 
     public static void main(String[] args) {
-        System.out.println("Pi: " + TypesOfMethodsAndAttributes.pi);
+        System.out.println("Pi: " + TypesOfMethodsAndAttributes.PI);
 
         Main main = new Main();
         main.method1();
