@@ -1,7 +1,7 @@
 package interfaces;
 
 public class Main implements TypesOfMethodsAndAttributes {
-    // public non static methods need to over-ridden.
+    // public non static methods need to be over-ridden.
     // default methods can be over-ridden or used as it is
 
     @Override
