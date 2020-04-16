@@ -1,9 +1,27 @@
 package multithread;
 
 public class Main {
+
     public static void main(String[] args) {
         // extendTechniqueMethod();
-        implementsTechniqueMethod();
+        // implementsTechniqueMethod();
+        synchronizeDemo();
+    }
+
+    public static void synchronizeDemo() {
+        TestObject testObject = new TestObject();
+        NewThread thread1 = new NewThread(testObject, "suspend");
+        NewThread thread2 = new NewThread(testObject, "resume");
+
+        thread1.thread.start();
+        thread2.thread.start();
+
+        try {
+            thread1.thread.join();
+            thread2.thread.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void extendTechniqueMethod() {
