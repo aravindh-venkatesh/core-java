@@ -1,7 +1,7 @@
 package interfaces;
 
 public interface TypesOfMethodsAndAttributes {
-    // implicitly attributes are static. it is not required to implement an interface to use static attributes
+    // implicitly attributes are static and final. it is not required to implement an interface to use static attributes
     double PI = 3.14;
 
     // most generic form of method written for interface
